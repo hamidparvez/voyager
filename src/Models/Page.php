@@ -9,6 +9,8 @@ use TCG\Voyager\Traits\Translatable;
 class Page extends Model
 {
     use Translatable;
+    
+    protected $table='voyager_pages';
 
     protected $translatable = ['title', 'slug', 'body'];
 
